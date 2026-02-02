@@ -7,11 +7,17 @@ actionButton[i].style.backgroundColor = 'rgb(87, 89, 114)';
 actionButton[0].addEventListener('touchstart', () => {
   if (actionButton[1].style.backgroundColor === 'rgb(87, 89, 114)') {
     actionButton[0].style.backgroundColor = 'rgb(197, 80, 80)'
+  }else {
+    actionButton[0].style.backgroundColor = 'rgb(197, 80, 80)'
+    actionButton[1].style.backgroundColor = 'rgb(87, 89, 114)'
   }
 });
 
 actionButton[1].addEventListener('touchstart', () => {
   if (actionButton[0].style.backgroundColor === 'rgb(87, 89, 114)') {
     actionButton[1].style.backgroundColor = 'rgb(120, 188, 139)'
+  } else {
+    actionButton[1].style.backgroundColor = 'rgb(120, 188, 139)'
+    actionButton[0].style.backgroundColor = 'rgb(87, 89, 114)'
   }
 });
